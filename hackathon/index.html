@@ -9,26 +9,42 @@
         <img id="sky" src="/assets/images/aerial 360 vr panorama - 8000x4000.jpg">
         <img id="plane" src="/assets/images/pool_water_texture_190317.jpg">
         <img id="logo" src="/assets/images/societe-generale-logo.png">
+        <img id="road2" src="/assets/images/road2.png">
+        <img id="luxFlag" src="/assets/images/luxFlag.jpg">
+        <img id="leftArrow" src="/assets/images/arrow-25838_960_720.png">
+        <img id="fiduciaryServices" src="/assets/images/fiduciaryServices.jpeg">
+        <img id="successionPlanning" src="/assets/images/successionPlanning.jpg">
+        <img id="lifeInsurance" src="/assets/images/lifeInsurance.jpg">
+
+        <audio id="wealthPlanning" src="/assets/sounds/wealthPlanning.mp3" preload="auto"></audio>
+
         <a-asset-item id="bench" src="/assets/objects/bench/model.gltf"></a-asset-item>
         <a-asset-item id="statueLiberty" src="/assets/objects/statueLiberty/model.gltf"></a-asset-item>
         <a-asset-item id="bridge" src="/assets/objects/bridge/puente_papelera.gltf"></a-asset-item>
         <a-asset-item id="pillar" src="/assets/objects/pillar/pillar.gltf"></a-asset-item>
-        <a-asset-item id="block" src="/assets/objects/block/stone_block_007.gltf"></a-asset-item>Billboard 1.gltf
+        <a-asset-item id="block" src="/assets/objects/block/stone_block_007.gltf"></a-asset-item>
+        <a-asset-item id="boulder" src="/assets/objects/boulder/PUSHILIN_boulder.gltf"></a-asset-item>
+        <a-asset-item id="banner" src="/assets/objects/banner/flag holders dec 10-1.gltf"></a-asset-item>
+        
         <a-asset-item id="signBoard" src="/assets/objects/signBoard/Billboard 1.gltf"></a-asset-item>
         <a-asset-item id="tree" src="/assets/objects/tree/model.gltf"></a-asset-item>
         <a-asset-item id="elephant" src="/assets/objects/elephant/model_New Qlone_20171023_184735172.gltf"></a-asset-item>
         <a-asset-item id="swan" src="/assets/objects/swan/GreatEgret.gltf"></a-asset-item>
+        <a-asset-item id="stone" src="/assets/objects/stone/PUSHILIN_stone.gltf"></a-asset-item>
+         <a-asset-item id="tree2" src="/assets/objects/tree2/model.gltf"></a-asset-item>
+         <a-asset-item id="treasure" src="/assets/objects/treasure/model.gltf"></a-asset-item>
+         <a-asset-item id="pond" src="/assets/objects/pond/PUSHILIN_pond.gltf"></a-asset-item>
   </a-assets>
   <a-camera position="1.091 1.600 0.914"></a-camera>
       <!--a-sky src="#sky"></a-sky-->
       <!--a-sky color="#000000"></a-sky-->
-      <a-entity environment="preset: forest; seed: 100000;shadow:true;shadowSize:20;ground:canyon;dressing:trees;dressingAmount:50;dressingScale:5;grid:dots;groundTexture:squares;gridColor:#e2751d;"</a-entity>
+      <a-entity scale="1 1 1" environment="preset: forest; seed: 100000;shadow:true;shadowSize:20;ground:flat;dressing:trees;dressingAmount:5;dressingScale:5;grid:dots;groundTexture:squares;gridColor:#e2751d;"></a-entity>
       <!--a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane-->
         <!--a-plane material="src:#plane; repeat: 4 4"  position="0 0 -4" rotation="-90 0 0" width="4" height="4" ></a-plane-->
-        <a-plane material="src:#plane; repeat: 1 20; opacity: 0.55;metalness:0.5"" position="0 0.554 -4" rotation="-90 0 0" width="4" height="4" geometry="" scale="1.828 20.42159 1.31658"></a-plane>
+        <!--a-plane material="src:#plane; repeat: 1 20; opacity: 0.55;metalness:0.5"" position="0 0.554 -4" rotation="-90 0 0" width="4" height="4" geometry="" scale="1.828 20.42159 1.31658"></a-plane-->
     
         <a-entity gltf-model="#bench" position="-5.30765 -0.67113 -5.993" rotation="0 63.587 0" ></a-entity>
         <a-entity gltf-model="#bridge" position="-1.332 0.887 -15.905" rotation="-0.048 35.658 1.689" scale=" 1 0.574 1.293"></a-entity>
@@ -51,6 +67,8 @@
         
         <a-entity position="0.83036 0.97946 -1.63807" scale="0.710 0.737 1" rotation="-74.994 0 0" text="value: YOUR BRIDGE TO SUCCESS; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffbe31"></a-entity>
         <a-entity gltf-model="#tree" position="-7.54023 6.73069 -31.32094" scale="1.630 1.709 1"></a-entity>
+        <a-entity gltf-model="#stone" position="-6.64085 1.58139 -31.32094" scale="1.63 1.709 1"></a-entity>
+        <a-entity position="-6.489 1.347 -30.787" scale="0.24877 0.89 1" text="value: Tree of recognition; align: center; height: 2; lineHeight: 1.33; width: 12.19; wrapCount: 50; color: #ffd979"></a-entity>
         <a-entity gltf-model="#tree" position="-0.050 6.73069 -31.32094" rotation="180.000 6.835 180.000" scale="1.630 1.709 1"></a-entity>
         
         <a-entity position="-3.65165 9.97868 -31.23454" scale="0.8701 0.89 1" text="value: Best Private Bank for Succession Planning; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #131313;opacity: 2"></a-entity>
@@ -59,7 +77,55 @@
         <a-entity position="-3.65165 11.17812 -31.47322" scale="0.8701 0.89 1" text="value: Best Wealth Planning team Europe; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #131313; opacity: 2"></a-entity>
         <a-entity position="-3.65165 11.67812 -31.47322" scale="0.8701 0.89 1" text="value: Best Private Bank for Entrepreneurs in Western Europe; align: center; height: 2; lineHeight: 1.33; width: 12.19;wrapCount:50; color: #131313; opacity: 2"></a-entity>
         <a-entity gltf-model="#swan" position="0.96568 -0.1435 -35.16213" rotation="-0.372 -90.000 0" scale="0.5 0.5 0.31"></a-entity>
-        <a-entity gltf-model="/assets/objects/elephant/model_New Qlone_20171023_184735172.gltf" position="-17.04593 16.24268 -56.0193" rotation="-0.6096270940191959 127.3794040556895 0.5168079312080026" scale="0.2 0.2 0.2"></a-entity>
+        <a-entity gltf-model="#elephant" position="-17.04593 15.086 -56.0193" rotation="-0.6096270940191959 127.3794040556895 0.5168079312080026" scale="0.2 0.2 0.2"></a-entity>
+
+        
+        <a-entity gltf-model="#banner" position="-15.13915 2.47105 -36.68955" rotation="-1.4289567410562731 -79.32256898909168 0.9144406410287937" scale="0.8 0.8 0.8"></a-entity>
+        <a-entity position="-10.80137 2.12874 -38.08128" scale="0.43215 0.89 1" text="value: 1094m euros in net banking income; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffda26; opacity: 2" rotation="0 44.09540487106329 0"></a-entity>
+        <a-entity position="-10.80137 1.84738 -38.08128" scale="0.43215 0.79 1" text="value: 118b euros in assets under management; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffffff; opacity: 2" rotation="0 44.09540487106329 0"></a-entity>
+        <a-entity position="-10.80137 1.57579 -38.08128" scale="0.43215 0.69 1" text="value: 11 Countries; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffda26; opacity: 2" rotation="0 44.09540487106329 0"></a-entity>
+        <a-entity position="-10.80137 1.33149 -38.08128" scale="0.43215 0.59 1" text="value: 2.500 members of staff worldwide; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffffff; opacity: 2" rotation="0 44.09540487106329 0"></a-entity>
+        <a-entity position="-10.80137 1.06408 -38.08128" scale="0.43215 0.49 1" text="value: 600 private bankers at your service; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffda26; opacity: 2" rotation="0 44.09540487106329 0"></a-entity>
+        <a-entity position="-10.80137 0.85572 -38.08128" scale="0.43215 0.39 1" text="value: 500 experts at your service; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffffff; opacity: 2" rotation="0 44.09540487106329 0"></a-entity>
+        <!--a-plane material="src:#plane; repeat: 1 20; opacity: 0.55;metalness:0.5"" position="0 0.554 4" rotation="-90 0 0" width="4" height="4" geometry="" scale="1.828 20.42159 1.31658"></a-plane-->
+        <a-plane material="src: #road2; repeat: 1 20; opacity: 1  ; metalness: 0.5" position="-2.85574 0.30376 -71.96947" rotation="-90 0 0" width="4" height="4" geometry="" scale="2.28643 20.42159 61.0368"></a-plane>
+
+        <a-cylinder position="4.31359 0.5 -56.0193" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #faffea" geometry=""></a-cylinder>
+        <a-image position="2.30417 11.04235 -56.08677" src="#luxFlag" material="" geometry="" scale="4 2 2"></a-image>
+        <a-image position="3.87952 2.78982 -81.08505" src="#fiduciaryServices" material="" geometry="" scale="4 2 2" sound="src: #wealthPlanning;autoplay: true;volume:3"></a-image>
+        <a-cylinder position="4.0952 -9.31416 -81.69775" radius="0.5" height="1.5" scale="0.11197 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
+        <a-image position="3.87952 2.78982 -86.08505" src="#lifeInsurance" material="" geometry="" scale="4 2 2"></a-image>
+        <a-cylinder position="4.0952 -9.31416 -86.69775" radius="0.5" height="1.5" scale="0.11197 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
+
+        <a-image position="-12.20532 2.78982 -85.08505" src="#successionPlanning" material="" geometry="" scale="4 2 2"></a-image>
+        <a-cylinder position="-12.42817 -5.75744 -85.69775" radius="0.5" height="1.5" scale="0.10046 11.3393 0.31331" material="color: #8d9085" geometry=""></a-cylinder>
+
+
+        <a-entity gltf-model="#tree2" position="27.08572 -45.899 -71.36984" scale="100 100 100"></a-entity>
+        <a-entity gltf-model="#treasure" position="2.74821 -19.57252 -68.86297" scale="10 10 10"></a-entity>
+        <a-cylinder position="4.74821 -8.03519 -64.81147" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
+        <a-plane position="4.66263 4.89287 -64.45725" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
+        <a-image position="4.8127 4.28337 -63.73708" rotation="0 0 5.441"  src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
+        <a-entity position="4.66103 5.60682 -64.15289" scale="0.43215 0.39 1" text="value: Wealth Planning; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
+        <a-entity gltf-model="#pond" position="-32.25212 0.80988 -90.07486" scale="15 15 15"></a-entity>
+
+        <a-sphere position="-7.00535 2.71205 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+         <a-entity position="-6.95913 3.84122 -97.32351" scale="0.43215 0.39 1" text="value: A network of 230 experts; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
+
+         <a-sphere position="-5.85667 5.61388 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+         <a-entity position="-5.98452 6.73803 -97.32351" scale="0.43215 0.39 1" text="value: A presence in 9 Countries; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
+
+         <a-sphere position="-2.24943 7.45656 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+         <a-entity position="-2.22133 8.73982 -97.32351" scale="0.43215 0.39 1" text="value: Benefits we offer; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
+
+         <a-sphere position="1.67185 5.79618 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+         <a-entity position="1.86066 6.9628 -97.32351" scale="0.43215 0.39 1" text="value: The capacity to deal with your requests; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
+
+         <a-sphere position="2.54517 2.986 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+         <a-entity position="2.32033 4.17235 -97.50583" scale="0.43215 0.39 1" text="value: Internation Expertise; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
+
+         <a-entity position="0 0 -97.32351"  environment="preset: forest; seed: 100000;shadow:true;shadowSize:20;ground:flat;dressing:trees;dressingAmount:5;dressingScale:5;grid:dots;groundTexture:squares;gridColor:#e2751d;"></a-entity>
+          <a-plane material="src: #road2; repeat: 1 20; metalness: 0.5" position="-2.85574 0.31623 -153.35362" rotation="-90 0 0" width="4" height="4" geometry="" scale="2.28643 20.42159 61.0368"></a-plane>
 
         <!--a-entity gltf-model="#signBoard" rotation="0 83.045 0" position="1.279 4.267 -15.219"  scale="0.003 0.003 0.003"></a-entity>
         <a-plane position="1.279 4.267 -15.219"  scale="0.1 0.1 0.1"></a-plane>
