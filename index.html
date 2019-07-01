@@ -1,6 +1,6 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
 	 <script src="https://cdn.jsdelivr.net/npm/three-vrcontrols@1.0.0/VRControls.min.js"></script>
         <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.js"></script>
@@ -56,7 +56,7 @@
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane-->
         <!--a-plane material="src:#plane; repeat: 4 4"  position="0 0 -4" rotation="-90 0 0" width="4" height="4" ></a-plane-->
         <!--a-plane material="src:#plane; repeat: 1 20; opacity: 0.55;metalness:0.5"" position="0 0.554 -4" rotation="-90 0 0" width="4" height="4" geometry="" scale="1.828 20.42159 1.31658"></a-plane-->
-    
+  
         <a-entity gltf-model="#bench" position="-5.30765 -0.67113 -5.993" rotation="0 63.587 0" ></a-entity>
         <a-entity gltf-model="#bridge" position="-1.332 0.887 -15.905" rotation="-0.048 35.658 1.689" scale=" 1 0.574 1.293"></a-entity>
         <a-entity gltf-model="#statueLiberty" position="-3.290 1.292 -1.477" rotation="1.189 -137.978 -5.653" scale=" 1 0.574 1.293"></a-entity>
@@ -120,19 +120,30 @@
         <a-entity position="4.66103 5.60682 -64.15289" scale="0.43215 0.39 1" text="value: Wealth Planning; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
         <a-entity gltf-model="#pond" position="-32.25212 0.80988 -90.07486" scale="15 15 15"></a-entity>
 
-        <a-sphere position="-7.00535 2.71205 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+        <a-sphere position="-7.00535 2.71205 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
+		  <a-animation begin="click" attribute="rotation" to="0 360 0"
+                   easing="linear" dur="10000" fill="backwards"></a-animation>
+		</a-sphere>
          <a-entity position="-6.95913 3.84122 -97.32351" scale="0.43215 0.39 1" text="value: A network of 230 experts; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
 
-         <a-sphere position="-5.85667 5.61388 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+         <a-sphere position="-5.85667 5.61388 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
+		  <a-animation begin="click" attribute="rotation" to="0 360 0"
+                   easing="linear" dur="10000" fill="backwards"></a-animation></a-sphere>
          <a-entity position="-5.98452 6.73803 -97.32351" scale="0.43215 0.39 1" text="value: A presence in 9 Countries; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
 
-         <a-sphere position="-2.24943 7.45656 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+         <a-sphere position="-2.24943 7.45656 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
+		  <a-animation begin="click" attribute="rotation" to="0 360 0"
+                   easing="linear" dur="10000" fill="backwards"></a-animation></a-sphere>
          <a-entity position="-2.22133 8.73982 -97.32351" scale="0.43215 0.39 1" text="value: Benefits we offer; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
 
-         <a-sphere position="1.67185 5.79618 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+         <a-sphere position="1.67185 5.79618 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
+		  <a-animation begin="click" attribute="rotation" to="0 360 0"
+                   easing="linear" dur="10000" fill="backwards"></a-animation></a-sphere>
          <a-entity position="1.86066 6.9628 -97.32351" scale="0.43215 0.39 1" text="value: The capacity to deal with your requests; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
 
-         <a-sphere position="2.54517 2.986 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3"></a-sphere>
+         <a-sphere position="2.54517 2.986 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
+		  <a-animation begin="click" attribute="rotation" to="0 360 0"
+                   easing="linear" dur="10000" fill="backwards"></a-animation></a-sphere>
          <a-entity position="2.32033 4.17235 -97.50583" scale="0.43215 0.39 1" text="value: Internation Expertise; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
 
          <a-entity position="0 0 -97.32351"  environment="preset: forest; seed: 100000;shadow:true;shadowSize:20;ground:flat;dressing:trees;dressingAmount:5;dressingScale:5;grid:dots;groundTexture:squares;gridColor:#e2751d;"></a-entity>
@@ -180,5 +191,6 @@ AFRAME.registerComponent('cursor-listener', {
   }
 });
 </script>
+
   </body>
 </html>
