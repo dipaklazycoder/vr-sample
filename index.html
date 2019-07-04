@@ -79,13 +79,14 @@
          <!--a-asset-item id="world" src="assets/objects/world/earth_ball.gltf"></a-asset-item-->
   </a-assets>
   
-  <a-entity id="rig" movement-controls="" position-listener="" position="0 0 0" rotation="" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
+<a-entity id="rig" progressive-controls look-controls wasd-controls movement-controls="" position-listener="" position="0 0 0" rotation="" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
               <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position=".5 1.6 0" rotation="">
                   <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: white; shader: flat" raycaster="">
 </a-entity>
             </a-entity>
           
          </a-entity>
+
   
  <!-- <!--  <a-camera position="1.091 1.600 0.914"></a-camera>
   <!--a-camera position="-2.091 1.600 -176.855"-->
