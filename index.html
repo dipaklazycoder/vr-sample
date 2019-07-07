@@ -39,18 +39,28 @@
         <img id="thanks" src="assets/images/thanks.png">
 
         <!--audio id="wealthPlanning" src="/assets/sounds/wealthPlanning.mp3" preload="auto"></audio-->
-		<audio id="welcome" src="assets/sounds/welcomespeech_male_en.mp3" preload="auto"></audio>
-		<audio id="keyfigures2017" src="assets/sounds/keyfigures_male_en.mp3" preload="auto"></audio>
-		<audio id="bespoke" src="assets/sounds/bespokeapproach_male_en.mp3" preload="auto"></audio>
-		
-		<audio id="luxwelcome" src="assets/sounds/luxwelcome.mp3" preload="auto"></audio>
-		<audio id="luxpresence" src="assets/sounds/luxpresence_male_en.mp3" preload="auto"></audio>
-		<audio id="luxofferings" src="assets/sounds/luxofferings_male_en.mp3" preload="auto"></audio>
-		<audio id="wealthoffer" src="assets/sounds/wealthplanningoffer_male_en.mp3" preload="auto"></audio>
-		<audio id="wealthbenefits" src="assets/sounds/wealthbenefits_male_en.mp3" preload="auto"></audio>
-		<audio id="corporatesale" src="assets/sounds/corporatesale_male_en.mp3" preload="auto"></audio>
-		<audio id="corporaterealestate" src="assets/sounds/corporaterealestate_male_en.mp3" preload="auto"></audio>
-		<audio id="corporateequity" src="assets/sounds/corporateequity_male_en.mp3" preload="auto"></audio>
+		<audio id="welcome_en" src="assets/sounds/welcomespeech_male_en.mp3" preload="auto"></audio>
+		<audio id="welcome_fr" src="assets/sounds/welcomespeech_male_fr.mp3" preload="auto"></audio>
+		<audio id="keyfigures2017_en" src="assets/sounds/keyfigures_male_en.mp3" preload="auto"></audio>
+		<audio id="keyfigures2017_fr" src="assets/sounds/keyfigures_male_fr.mp3" preload="auto"></audio>
+		<audio id="bespoke_en" src="assets/sounds/bespokeapproach_male_en.mp3" preload="auto"></audio>
+		<audio id="bespoke_fr" src="assets/sounds/bespokeapproach_male_fr.mp3" preload="auto"></audio>
+		<audio id="luxwelcome_en" src="assets/sounds/luxwelcome.mp3" preload="auto"></audio>
+		<audio id="luxwelcome_fr" src="assets/sounds/luxwelcome.mp3" preload="auto"></audio>
+		<audio id="luxpresence_en" src="assets/sounds/luxpresence_male_en.mp3" preload="auto"></audio>
+		<audio id="luxpresence_fr" src="assets/sounds/luxpresence_male_fr.mp3" preload="auto"></audio>
+		<audio id="luxofferings_en" src="assets/sounds/luxofferings_male_en.mp3" preload="auto"></audio>
+		<audio id="luxofferings_fr" src="assets/sounds/luxofferings_male_fr.mp3" preload="auto"></audio>
+		<audio id="wealthoffer_en" src="assets/sounds/wealthplanningoffer_male_en.mp3" preload="auto"></audio>
+		<audio id="wealthoffer_fr" src="assets/sounds/wealthplanningoffer_male_fr.mp3" preload="auto"></audio>
+		<audio id="wealthbenefits_en" src="assets/sounds/wealthbenefits_male_en.mp3" preload="auto"></audio>
+		<audio id="wealthbenefits_fr" src="assets/sounds/wealthbenefits_male_fr.mp3" preload="auto"></audio>
+		<audio id="corporatesale_en" src="assets/sounds/corporatesale_male_en.mp3" preload="auto"></audio>
+		<audio id="corporatesale_fr" src="assets/sounds/corporatesale_male_fr.mp3" preload="auto"></audio>
+		<audio id="corporaterealestate_en" src="assets/sounds/corporaterealestate_male_en.mp3" preload="auto"></audio>
+		<audio id="corporaterealestate_fr" src="assets/sounds/corporaterealestate_male_fr.mp3" preload="auto"></audio>
+		<audio id="corporateequity_en" src="assets/sounds/corporateequity_male_en.mp3" preload="auto"></audio>
+		<audio id="corporateequity_fr" src="assets/sounds/corporateequity_male_fr.mp3" preload="auto"></audio>
 
         <a-asset-item id="bench" src="assets/objects/bench/model.gltf"></a-asset-item>
         <a-asset-item id="statueLiberty" src="assets/objects/statueLiberty/model.gltf"></a-asset-item>
@@ -117,7 +127,7 @@
         <a-entity gltf-model="#pillar" position="4.567 0.635 -5.407" rotation="1.693 -105.927 -3.016" scale="0.5 0.5 0.310"></a-entity>
       
       
-        <a-entity sound="src: #welcome; autoplay:true on:click " position="0.19744 4.85643 -5.53188" text="value: Welcome to Societe Generale; align: center; height: 2; lineHeight: 1.33; width: 4.19; opacity: 2"></a-entity>
+        <a-entity cursor-listener="src: #welcome; autoplay:true on:click " position="0.19744 4.85643 -5.53188" text="value: Welcome to Societe Generale; align: center; height: 2; lineHeight: 1.33; width: 4.19; opacity: 2"></a-entity>
         <a-entity position="0.23549 4.63103 -5.53188" text="value: Private Banking; align: center; height: 2; lineHeight: 1.33; width: 4.19;opacity: 2"></a-entity>
 
         <!--a-image position="-1.508 4.7179 -14.96186" scale="5.252 1 1" rotation="0 -7.675 0.368" src="#logo" material="" geometry=""></a-image-->
@@ -140,7 +150,7 @@
         <a-entity gltf-model="#elephant" position="-17.04593 15.086 -56.0193" rotation="-0.6096270940191959 127.3794040556895 0.5168079312080026" scale="0.2 0.2 0.2"></a-entity>
 
         
-        <a-entity cursor-listener sound="src: #keyfigures2017; " gltf-model="#banner" position="-15.13915 2.47105 -36.68955" rotation="-1.4289567410562731 -79.32256898909168 0.9144406410287937" scale="0.8 0.8 0.8"></a-entity>
+        <a-entity cursor-listener="src: #keyfigures2017; " gltf-model="#banner" position="-15.13915 2.47105 -36.68955" rotation="-1.4289567410562731 -79.32256898909168 0.9144406410287937" scale="0.8 0.8 0.8"></a-entity>
         <a-entity position="-10.80137 2.12874 -38.08128" scale="0.43215 0.89 1" text="value: 1094m euros in net banking income; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffda26; opacity: 2" rotation="0 44.09540487106329 0"></a-entity>
         <a-entity position="-10.80137 1.84738 -38.08128" scale="0.43215 0.79 1" text="value: 118b euros in assets under management; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #000000; opacity: 2" rotation="0 44.09540487106329 0"></a-entity>
         <a-entity position="-10.80137 1.57579 -38.08128" scale="0.43215 0.69 1" text="value: 11 Countries; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffda26; opacity: 2" rotation="0 44.09540487106329 0"></a-entity>
@@ -151,7 +161,7 @@
         <a-plane material="src: #road2; repeat: 1 20; opacity: 1  ; metalness: 0.5" position="-2.85574 0.30376 -71.96947" rotation="-90 0 0" width="4" height="4" geometry="" scale="2.28643 20.42159 61.0368"></a-plane>
 
         <a-cylinder position="4.31359 0.5 -56.0193" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #faffea" geometry=""></a-cylinder>
-        <a-image cursor-listener sound="src: #luxwelcome;"  position="2.30417 11.04235 -56.08677" src="#luxFlag" material="" geometry="" scale="4 2 2"></a-image>
+        <a-image cursor-listener="src: #luxwelcome;"  position="2.30417 11.04235 -56.08677" src="#luxFlag" material="" geometry="" scale="4 2 2"></a-image>
         
         <a-image position="3.87952 2.78982 -81.08505" src="#fiduciaryServices" material="" geometry="" scale="4 2 2" sound="src: #wealthPlanning;autoplay: true;volume:3"></a-image>
         <a-cylinder position="4.0952 -9.31416 -81.69775" radius="0.5" height="1.5" scale="0.11197 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
@@ -166,11 +176,11 @@
         <a-entity gltf-model="#treasure" position="2.74821 -19.57252 -68.86297" scale="10 10 10"></a-entity>
         <a-cylinder position="4.74821 -8.03519 -64.81147" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
         <a-plane position="4.66263 4.89287 -64.45725" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
-        <a-image cursor-listener sound="src: #wealthoffer;" position="4.8127 4.28337 -63.73708" rotation="0 0 5.441"  src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
-        <a-entity cursor-listener sound="src: #wealthoffer;" position="4.66103 5.60682 -64.15289" scale="0.43215 0.39 1" text="value: Wealth Planning; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
+        <a-image cursor-listener="src: #wealthoffer;" position="4.8127 4.28337 -63.73708" rotation="0 0 5.441"  src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
+        <a-entity cursor-listener="src: #wealthoffer;" position="4.66103 5.60682 -64.15289" scale="0.43215 0.39 1" text="value: Wealth Planning; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
         <a-entity gltf-model="#pond" position="-32.25212 0.80988 -90.07486" scale="15 15 15"></a-entity>
         
-		<a-entity cursor-listener sound="src: #wealthbenefits;">
+		<a-entity cursor-listener="src: #wealthbenefits;">
         <a-sphere position="-7.00535 2.71205 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
 		<a-animation begin="click" attribute="rotation" to="0 360 0"
                    easing="linear" dur="10000" fill="backwards"></a-animation>
@@ -223,16 +233,16 @@
         <a-plane position="3.39742 3.64723 -107.38754" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
         <a-image position="3.10269 3.38595 -106.65587" rotation="0 0 5.441" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
         <a-entity position="3.16687 4.64426 -106.94602" scale="0.43215 0.39 1" text="value: Corporate Solutions; height: 2; lineHeight: 1.33; width: 27.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
-        <a-entity cursor-listener sound="src: #corporatesale;" gltf-model="#entrepreneur" position="-9.12534 0.17161 -107.477" rotation="2.2259410340832484 42.21610330303418 0" scale="0.002 0.002 0.002"></a-entity>
-        <a-entity cursor-listener sound="src: #corporatesale;" gltf-model="#cloud" position="-10.68092 7.72184 -110.76658" rotation="62.588763624500864 0.12261296815799617 -30.861225719131536" scale="0.01 0.01 0.01"></a-entity>
-        <a-entity cursor-listener sound="src: #corporatesale;" position="-10.40116 6.27683 -109.45004" scale="0.43215 0.39 1" text="value: Fund?...Sale?...Transfer?; height: 2; lineHeight: 1.33; width: 22.19; color: #000000; opacity: 2; align: center" rotation="5.88771430276434 15.316880737232298 -18.279645495853785"></a-entity>
-        <a-entity cursor-listener sound="src: #corporateequity;" gltf-model="#manInSuit" position="7.50224 -2.43872 -118.13934" rotation="0 49.22509601086955 0" scale="2.23525 2.01829 3.19489"></a-entity>
-        <a-entity  cursor-listener sound="src: #corporateequity;" gltf-model="#cloud" position="5.29188 8.03232 -117.31403" rotation="68.35042721233641 -30.9758172781577 -2.0632210202660946" scale="0.01 0.01 0.01"></a-entity>
-        <a-entity cursor-listener sound="src: #corporateequity;" position="4.55178 6.32988 -116.50607" scale="0.43215 0.39 1" text="value: Direct and Private Equity !!!; height: 2; lineHeight: 1.33; width: 22.19; color: #000000; opacity: 2; align: center" rotation="9.485316298390778 -22.724652070478708 1.4163516695633949"></a-entity>
-        <a-entity cursor-listener sound="src: #corporaterealestate;" gltf-model="#property" position="-38.39952 -140.61874 -97.9392" rotation="-0.4388856710702106 -36.76899354472545 2.0271246791728528" scale="80 80 80"></a-entity>
+        <a-entity cursor-listener="src: #corporatesale;" gltf-model="#entrepreneur" position="-9.12534 0.17161 -107.477" rotation="2.2259410340832484 42.21610330303418 0" scale="0.002 0.002 0.002"></a-entity>
+        <a-entity cursor-listener="src: #corporatesale;" gltf-model="#cloud" position="-10.68092 7.72184 -110.76658" rotation="62.588763624500864 0.12261296815799617 -30.861225719131536" scale="0.01 0.01 0.01"></a-entity>
+        <a-entity cursor-listener="src: #corporatesale;" position="-10.40116 6.27683 -109.45004" scale="0.43215 0.39 1" text="value: Fund?...Sale?...Transfer?; height: 2; lineHeight: 1.33; width: 22.19; color: #000000; opacity: 2; align: center" rotation="5.88771430276434 15.316880737232298 -18.279645495853785"></a-entity>
+        <a-entity cursor-listener="src: #corporateequity;" gltf-model="#manInSuit" position="7.50224 -2.43872 -118.13934" rotation="0 49.22509601086955 0" scale="2.23525 2.01829 3.19489"></a-entity>
+        <a-entity  cursor-listener="src: #corporateequity;" gltf-model="#cloud" position="5.29188 8.03232 -117.31403" rotation="68.35042721233641 -30.9758172781577 -2.0632210202660946" scale="0.01 0.01 0.01"></a-entity>
+        <a-entity cursor-listener="src: #corporateequity;" position="4.55178 6.32988 -116.50607" scale="0.43215 0.39 1" text="value: Direct and Private Equity !!!; height: 2; lineHeight: 1.33; width: 22.19; color: #000000; opacity: 2; align: center" rotation="9.485316298390778 -22.724652070478708 1.4163516695633949"></a-entity>
+        <a-entity cursor-listener="src: #corporaterealestate;" gltf-model="#property" position="-38.39952 -140.61874 -97.9392" rotation="-0.4388856710702106 -36.76899354472545 2.0271246791728528" scale="80 80 80"></a-entity>
         <a-cylinder position="-14.77938 -8.03519 -128.80359" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
         <a-plane position="-14.21969 4.67107 -128.36044" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="-1.8626857919703061 45.00010522957486 2.9409923624065155"></a-plane>
-        <a-entity cursor-listener sound="src: #corporaterealestate;" position="-13.61258 4.72359 -127.40883" scale="0.43215 0.39 1" text="value: Buy or Sale; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center" rotation="1.3309809580889025 57.85613223672026 3.1873642143127694"></a-entity>
+        <a-entity cursor-listener="src: #corporaterealestate;" position="-13.61258 4.72359 -127.40883" scale="0.43215 0.39 1" text="value: Buy or Sale; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center" rotation="1.3309809580889025 57.85613223672026 3.1873642143127694"></a-entity>
 
         <a-cylinder position="4.01807 -8.03519 -133" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
         <a-plane position="3.49925 3.64723 -133" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
@@ -383,20 +393,35 @@
 
         });
       });
-
+ window.language='_en';
 
     </script>
 	<script>
-	// Component to change to a sequential color on click.
+	
 AFRAME.registerComponent('cursor-listener', {
-  init: function () {
-    this.el.addEventListener('click', function (evt) {
-	let audio = document.querySelector(this.components.sound.attrValue.src)
-	audio.play();
-      console.log('I was clicked');
+    schema: {
+        src: {type: 'string'}
+      },
+      init: function () {
+        let audio = document.querySelector(this.data.src+window.language);
+
+        this.el.addEventListener('click', playIfFree);
+        this.el.addEventListener('mouseenter', playIfFree);
+
+        audio.addEventListener('ended', function () {
+          window.isPlaying = false
+        })
+
+        function playIfFree () {
+          if(!window.isPlaying) {
+            audio.play();
+            window.isPlaying = true
+          } else {
+            return false
+          }
+        }
+      }
     });
-  }
-});
 </script>
 
   </body>
